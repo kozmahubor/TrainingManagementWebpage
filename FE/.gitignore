@@ -40,3 +40,8 @@ testem.log
 # System files
 .DS_Store
 Thumbs.db
+/.vs/FE/v17/.wsuo
+/.vs/FE/FileContentIndex/84e0209f-0402-407a-b16d-d7be7d69b1bf.vsidx
+/src/assets/images/backgrounds/bhome.png
+/.vs/FE/v17/DocumentLayout.json
+/.vs/VSWorkspaceState.json
