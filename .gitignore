@@ -4,3 +4,6 @@ Backend/WorkinOut/bin/
 
 /Backend/WorkinOut/bin/Debug/net7.0/WorkinOut.dll
 /Backend/WorkinOut/bin/Debug/net7.0/WorkinOut.exe
+/Backend/.vs/WorkinOut/v17/.suo
+/Backend/WorkinOut/obj/Debug/net7.0/WorkinOut.AssemblyInfo.cs
+/Backend/WorkinOut/obj/Debug/net7.0/WorkinOut.AssemblyInfoInputs.cache
