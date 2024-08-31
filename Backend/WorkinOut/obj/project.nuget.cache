@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "0QXuyuQMuS8TJ36p1ufIhu5PjKTY+0DnqqnVL6ZFpeFs8iLveflrYk+G2lDZ76LKqqZZ7foIDBxS7A4+1qK7zg==",
+  "dgSpecHash": "02sHHgSpqCDPkl1/jZJjM/5vL+hXw+6D916b3pl2J+J5yyoC6wx3sPgsaUat7lMc+rX56vOeE1Nhelw78qFLbA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Hunor\\source\\repos\\TrainingPage\\KF-IUE7VU-2022-2023-2-BPROF\\Backend\\WorkinOut\\WorkinOut\\WorkinOut.csproj",
+  "projectFilePath": "D:\\KELL\\Programming\\C#\\GitProjectsForWork\\TrainingWebpage\\Backend\\WorkinOut\\WorkinOut.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Hunor\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\Hunor\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",

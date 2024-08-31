@@ -12417,11 +12417,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Hunor\\source\\repos\\TrainingPage\\KF-IUE7VU-2022-2023-2-BPROF\\Backend\\WorkinOut\\WorkinOut\\WorkinOut.csproj",
+      "projectUniqueName": "D:\\KELL\\Programming\\C#\\GitProjectsForWork\\TrainingWebpage\\Backend\\WorkinOut\\WorkinOut.csproj",
       "projectName": "WorkinOut",
-      "projectPath": "C:\\Users\\Hunor\\source\\repos\\TrainingPage\\KF-IUE7VU-2022-2023-2-BPROF\\Backend\\WorkinOut\\WorkinOut\\WorkinOut.csproj",
+      "projectPath": "D:\\KELL\\Programming\\C#\\GitProjectsForWork\\TrainingWebpage\\Backend\\WorkinOut\\WorkinOut.csproj",
       "packagesPath": "C:\\Users\\Hunor\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Hunor\\source\\repos\\TrainingPage\\KF-IUE7VU-2022-2023-2-BPROF\\Backend\\WorkinOut\\WorkinOut\\obj\\",
+      "outputPath": "D:\\KELL\\Programming\\C#\\GitProjectsForWork\\TrainingWebpage\\Backend\\WorkinOut\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -12449,6 +12449,11 @@
         "warnAsError": [
           "NU1605"
         ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
       }
     },
     "frameworks": {
@@ -12553,7 +12558,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200\\RuntimeIdentifierGraph.json"
       }
     }
   },
