@@ -6,9 +6,9 @@ import {
   ViewChild,
   ViewEncapsulation,
 } from '@angular/core';
-import ButtonType from 'src/app/shared/types/button.type';
-import FormOptionsType from 'src/app/shared/types/form-options.type';
-import { LoginBackgroundImg } from 'src/assets/images';
+import FormOptionsType from '../../../types/form-options.type';
+import ButtonType from "../../../types/button.type";
+import {LoginBackgroundImg} from "../../../../../assets/images";
 
 @Component({
   selector: 'app-shared-login-form',

@@ -104,7 +104,7 @@
               "RelativeDocumentMoniker": "WorkinOut\\Startup.cs",
               "ToolTip": "D:\\KELL\\Programming\\C#\\GitProjectsForWork\\TrainingWebpage\\Backend\\WorkinOut\\Startup.cs",
               "RelativeToolTip": "WorkinOut\\Startup.cs",
-              "ViewState": "AQIAAG8AAAAAAAAAAAAowHsAAAAAAAAA",
+              "ViewState": "AQIAAG8AAAAAAAAAAAAowH4AAAA4AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-02-29T02:53:28.487Z",
               "EditorCaption": ""
@@ -131,7 +131,8 @@
               "RelativeToolTip": "WorkinOut\\Identity\\ReqiresClaimAttribute.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAqwAsAAAAPAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-29T02:48:57.898Z"
+              "WhenOpened": "2024-02-29T02:48:57.898Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",

@@ -7,7 +7,7 @@ import {
 } from '../../services';
 import { MediaMatcher } from '@angular/cdk/layout';
 import { MatDialog } from '@angular/material/dialog';
-import { LoginDialogComponent } from 'src/app/features/auth/pages/login-dialog/login-dialog.component';
+import {LoginDialogComponent} from "../../../features/auth/pages/login-dialog/login-dialog.component";
 
 @Component({
   selector: 'app-sidenav',

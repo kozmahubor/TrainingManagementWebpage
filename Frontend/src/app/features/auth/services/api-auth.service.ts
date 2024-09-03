@@ -8,8 +8,8 @@ import {
   GuardUserService,
   LocalStorageService,
   LoggerService,
-} from 'src/app/core/services';
-import { IAuthModel } from 'src/app/core/models';
+} from '../../../core/services';
+import { IAuthModel } from '../../../core/models';
 
 @Injectable({
   providedIn: 'root',

@@ -1,13 +1,13 @@
 import { Injectable } from '@angular/core';
 import { Router } from '@angular/router';
-import { IProfileEditModel, IProfileModel } from 'src/app/core/models';
+import { IProfileEditModel, IProfileModel } from '../../../core/models';
 import {
   ApiBaseService,
   GuardAdminService,
   GuardUserService,
   LocalStorageService,
   LoggerService,
-} from 'src/app/core/services';
+} from '../../../core/services';
 
 @Injectable({
   providedIn: 'root',

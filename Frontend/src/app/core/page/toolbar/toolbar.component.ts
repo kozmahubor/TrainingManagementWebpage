@@ -5,7 +5,7 @@ import {
   GuardUserService,
   LocalStorageService,
 } from '../../services';
-import { NavbarIcon } from 'src/assets/images';
+import { NavbarIcon } from '../../../../assets/images';
 
 @Component({
   selector: 'app-toolbar',
