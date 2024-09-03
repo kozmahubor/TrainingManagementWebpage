@@ -1,13 +1,36 @@
-import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { Component, OnInit, OnDestroy, Renderer2 } from '@angular/core';
+import { Router, NavigationEnd, Event as RouterEvent } from '@angular/router';
+import { Subscription } from 'rxjs';
 
 @Component({
   selector: 'app-root',
-  standalone: true,
-  imports: [RouterOutlet],
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.scss'
+  styleUrls: ['app.component.scss'],
+  template: `
+    <app-toolbar></app-toolbar>
+    <app-core-main>
+      <router-outlet></router-outlet>
+    </app-core-main>
+  `,
 })
-export class AppComponent {
-  title = 'FE';
+export class AppComponent implements OnInit, OnDestroy {
+  title = `'Workin'out'`;
+  currentPage: string = '';
+  routerSubscription: Subscription | undefined;
+  constructor(private renderer: Renderer2, private router: Router) {}
+
+  ngOnInit() {
+    this.routerSubscription = this.router.events.subscribe(
+      (event: RouterEvent) => {
+        if (event instanceof NavigationEnd) {
+          this.currentPage = event.url;
+        }
+      }
+    );
+  }
+  ngOnDestroy() {
+    if (this.routerSubscription) {
+      this.routerSubscription.unsubscribe();
+    }
+  }
+  protected readonly open = open;
 }
