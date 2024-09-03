@@ -1,4 +1,5 @@
-import { BackgroundType } from 'src/app/core/types';
+import {BackgroundType} from "../../../app/core/types";
+
 
 export const HomeBackgroundUpImg = {
   src: 'assets/images/backgrounds/home.png',

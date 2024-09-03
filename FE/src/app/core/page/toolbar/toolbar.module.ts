@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { ToolbarComponent } from './toolbar.component';
-import { SharedButtonModule } from 'src/app/shared/components/buttonss/shared-button/shared-button.module';
+import { SharedButtonModule } from '../../../shared/components/buttonss/shared-button/shared-button.module';
 import { CommonModule } from '@angular/common';
 
 @NgModule({

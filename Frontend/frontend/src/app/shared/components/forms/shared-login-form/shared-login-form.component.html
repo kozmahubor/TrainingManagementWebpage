@@ -1,0 +1,52 @@
+<form
+  id="form"
+  #form
+  [ngClass]="
+    options.float === 'left'
+      ? 'form-float-left'
+      : options.float === 'right'
+      ? 'form-float-right'
+      : 'form-float-center'
+  "
+>
+  <span id="title">{{ options.title }}</span>
+  <ng-container *ngFor="let input of options.inputs">
+    <ng-container *ngIf="input.type === 'file'; else elseInput">
+      <input
+        #file
+        [type]="input.type"
+        [name]="input.name"
+        (change)="fileInputChange($event)"
+        hidden
+      />
+    </ng-container>
+    <ng-template #elseInput>
+      <input
+        [type]="input.type"
+        [placeholder]="input.text"
+        [value]="input.value"
+        [name]="input.name"
+        (change)="input.onChange($event)"
+      />
+    </ng-template>
+  </ng-container>
+  <ng-container *ngFor="let button of options.buttons; index as i">
+    <div
+      #btn_container_parent
+      *ngIf="button.display === 'inline-left'; else elseBtn"
+      class="btn-container-parent"
+    >
+      <div #btn_container_left class="btn-container btn-container-left mb-6">
+        <!--Sign In-->
+      </div>
+      <div class="text-3xl text-center">
+        <span>You don’t have an account?<br /></span>
+        <span>Sign up for free</span>
+      </div>
+      <div #btn_container_right class="btn-container btn-container-right mt-12">
+        <!--Sign Up-->
+      </div>
+    </div>
+    <ng-template #elseBtn> </ng-template>
+  </ng-container>
+</form>

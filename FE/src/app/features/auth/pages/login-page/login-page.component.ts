@@ -2,13 +2,13 @@ import { Router } from '@angular/router';
 import { AccountType } from '../../types';
 import { ApiAuthService } from '../../services/api-auth.service';
 import { Component } from '@angular/core';
-import FormLayoutType from 'src/app/shared/types/form-layout.type';
-import { BackgroundType } from 'src/app/core/types';
-import { BuborImg } from 'src/assets/images';
+import {BuborImg} from "../../../../../assets/images";
+import FormLayoutType from "../../../../shared/types/form-layout.type";
+
 
 @Component({
   selector: 'app-login-page',
-  styleUrl: './login-page.component.scss',
+styleUrl: './login-page.component.scss',
   template: `
     <div class="page-login">
       <app-shared-login-layout-form

@@ -1,5 +1,5 @@
-import { BackgroundType } from 'src/app/core/types';
 import FormOptionsType from './form-options.type';
+import {BackgroundType} from "../../core/types";
 
 type FormLayoutType = {
   panel: FormOptionsType;

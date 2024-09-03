@@ -1,0 +1,129 @@
+<header>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <nav class="bg-gray-50 dark:bg-gray-800 dark:border-gray-700 border-gray-200">
+    <div class="flex flex-wrap items-center justify-between h-24 p-4">
+      <a class="flex items-center">
+        <img
+          class="h-60 relative inline-block mx-4 cursor-pointer"
+          [src]="navbarIcon.src"
+          [alt]="navbarIcon.alt"
+          (click)="router.navigate([''])"
+        />
+      </a>
+      <div id="navBtn" class="lg:order-1 flex">
+        <app-shared-button
+          id="register"
+          class="mb-4 mr-6"
+          *ngIf="!guardUserService.isLoggedIn(); else sign_out"
+          text="Sign up"
+          [ngClass]="'btn'"
+          (click)="router.navigate(['auth/register'])"
+        />
+        <app-shared-button
+          id="login"
+          class="lg:mr-19"
+          *ngIf="!guardUserService.isLoggedIn()"
+          text="Sign in"
+          [ngClass]="'btn'"
+          (click)="router.navigate(['auth/login'])"
+        />
+        <ng-template #sign_out>
+          <app-shared-button
+            id="logout"
+            class="lg:mr-28 mt-0"
+            text="Sign out"
+            type="outlined"
+            [ngClass]="'btn'"
+            (click)="localStorageService.clear()"
+            (click)="router.navigate(['/'])"
+          />
+        </ng-template>
+        <button
+          id="button"
+          data-collapse-toggle="navbar-solid-bg"
+          (click)="openMenu()"
+          type="button"
+          class="lg:hidden h-11 md:h-11 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600 items-center max-w-screen-sm p-2 py-0 ml-3 text-sm text-gray-500 rounded-lg"
+          aria-controls="navbar-solid-bg"
+          aria-expanded="false"
+        >
+          <svg
+            class="w-6 h-6"
+            aria-hidden="true"
+            fill="currentColor"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+              clip-rule="evenodd"
+            ></path>
+          </svg>
+        </button>
+      </div>
+      <div
+        class="lg:block lg:w-auto hidden w-full"
+        [class.hidden]="menuVariable"
+        id="navbar-solid-bg"
+      >
+        <ul
+          (click)="openMenu()"
+          class="lg:flex lg:top-6 sm:flex sm:relative sm:float-right md:flex md:relative md:float-right lg:absolute lg:flex-nowrap lg:left-28 lg:float-left bg-gray-50 bg-opacity-10 lg:flex-row lg:ml-0 lg:border-0 lg:bg-transparent dark:bg-gray-800 lg:dark:bg-transparent dark:border-gray-700 flex flex-col mr-1 font-medium rounded-lg"
+        >
+          <li class="lg:hidden sm:block md:block text-red-800">
+            <mat-icon
+              class="hover:bg-gray-100 lg:hover:bg-transparent lg:border-0 lg:hover:text-blue-700 lg:p-0 dark:text-red-600 lg:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent block text-gray-900"
+              aria-current="page"
+              routerLink=""
+              routerLinkActive="active"
+            >
+              home
+            </mat-icon>
+          </li>
+          <li class="lg:block sm:hidden md:hidden">
+            <a
+              class="hover:bg-gray-100 lg:hover:bg-transparent lg:border-0 lg:hover:text-blue-700 lg:p-0 dark:text-red-600 lg:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent block py-2 pl-3 pr-4 text-gray-900 rounded"
+              aria-current="page"
+              routerLink=""
+              routerLinkActive="active"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a
+              class="hover:bg-gray-100 lg:hover:bg-transparent lg:border-0 lg:hover:text-blue-700 lg:p-0 dark:text-red-600 lg:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent block py-2 pl-3 pr-4 text-gray-900 rounded"
+              routerLink="/person/create"
+              routerLinkActive="active"
+              >Create profile</a
+            >
+          </li>
+          <li *ngIf="guardUserService.isLoggedIn()">
+            <a
+              class="hover:bg-gray-100 lg:hover:bg-transparent lg:border-0 lg:hover:text-blue-700 lg:p-0 dark:text-red-600 lg:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent block py-2 pl-3 pr-4 text-gray-900 rounded"
+              routerLink="/list/profiles"
+              routerLinkActive="active"
+              >List profilesss</a
+            >
+          </li>
+          <li *ngIf="guardUserService.isLoggedIn()">
+            <a
+              class="hover:bg-gray-100 lg:hover:bg-transparent lg:border-0 lg:hover:text-blue-700 lg:p-0 dark:text-red-600 lg:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent block py-2 pl-3 pr-4 text-gray-900 rounded"
+              routerLink="/list/workouts"
+              routerLinkActive="active"
+              >List workout</a
+            >
+          </li>
+          <li>
+            <a
+              class="hover:bg-gray-100 lg:hover:bg-transparent lg:border-0 lg:hover:text-blue-700 lg:p-0 dark:text-red-600 lg:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent block py-2 pl-3 pr-4 text-gray-900 rounded"
+              href="https://github.com/siposm/oktatas-frontend-dev/blob/master/ff-requirements.md"
+              routerLinkActive="active"
+              >Info</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
